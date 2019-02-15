@@ -16,7 +16,7 @@ parser = OptionParser.new do |opts|
       longitude = Exif::Data.new(IO.read(file)).gps_longitude
       latitude = Exif::Data.new(IO.read(file)).gps_latitude
 
-      puts "Here is the gps details,\n logitude: #{longitude}, \n latitude: #{latitude}"
+      puts "Here is the gps details,\n longitude: #{longitude}, \n latitude: #{latitude}"
     end
     rescue Exif::NotReadable
      puts 'No data to be read'
@@ -58,7 +58,8 @@ else
     longitude = Exif::Data.new(IO.read(file)).gps_longitude
     latitude = Exif::Data.new(IO.read(file)).gps_latitude
 
-    puts "Here is the gps details,\n logitude: #{longitude}, \n latitude: #{latitude}"
+    puts "Here is the gps details,\n longitude: #{longitude}, \n latitude: #{latitude}"
+    puts "Hello world"
   end
   rescue Exif::NotReadable
     puts 'No data to be read'
