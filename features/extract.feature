@@ -1,6 +1,6 @@
 Feature: Extract
 As a user
-I want to get gps data from images
+I want to ensure my command can be run
 
 Scenario: Commands can be run
     Given a file named "extract/bin/app.rb" with:
