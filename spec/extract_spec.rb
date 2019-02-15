@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'optparse'
 
 RSpec.describe 'Extract' do
   let(:file) { 'app.rb' }
